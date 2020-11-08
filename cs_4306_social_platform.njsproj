@@ -1,75 +1,122 @@
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
-  <PropertyGroup>
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
-    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>cs_4306_social_platform</Name>
-    <RootNamespace>cs_4306_social_platform</RootNamespace>
-    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
-  </PropertyGroup>
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>200a3e82-5d85-40b6-896b-7e1b82a968d7</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
-    <StartupFile>server.js</StartupFile>
-    <SearchPath>
-    </SearchPath>
-    <WorkingDirectory>.</WorkingDirectory>
-    <OutputPath>.</OutputPath>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
-    <NodejsPort>1337</NodejsPort>
-    <StartWebBrowser>True</StartWebBrowser>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <DebugSymbols>true</DebugSymbols>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <DebugSymbols>true</DebugSymbols>
-  </PropertyGroup>
-  <ItemGroup>
-    <Content Include="server.js" />
-    <Content Include="package.json" />
-    <Content Include="README.md" />
-  </ItemGroup>
-  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
-  <ProjectExtensions>
-    <VisualStudio>
-      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
-        <WebProjectProperties>
-          <UseIIS>False</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:48022/</IISUrl>
-          <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>True</UseCustomServer>
-          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
-          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
-        </WebProjectProperties>
-      </FlavorProperties>
-      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
-        <WebProjectProperties>
-          <StartPageUrl>
-          </StartPageUrl>
-          <StartAction>CurrentPage</StartAction>
-          <AspNetDebugging>True</AspNetDebugging>
-          <SilverlightDebugging>False</SilverlightDebugging>
-          <NativeDebugging>False</NativeDebugging>
-          <SQLDebugging>False</SQLDebugging>
-          <ExternalProgram>
-          </ExternalProgram>
-          <StartExternalURL>
-          </StartExternalURL>
-          <StartCmdLineArguments>
-          </StartCmdLineArguments>
-          <StartWorkingDirectory>
-          </StartWorkingDirectory>
-          <EnableENC>False</EnableENC>
-          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
-        </WebProjectProperties>
-      </FlavorProperties>
-    </VisualStudio>
-  </ProjectExtensions>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{84716236-5f3b-41ba-9143-aa86640d88a6}</ProjectGuid>
+        <ProjectHome>.</ProjectHome>
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile />
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="firebase.json" />
+        <Content Include="package-lock.json" />
+        <Content Include="package.json" />
+        <Content Include="README.md" />
+        <Content Include="build\robots.txt" />
+        <Content Include="build\index.html" />
+        <Content Include="build\logo192.png" />
+        <Content Include="build\logo512.png" />
+        <Content Include="build\favicon.ico" />
+        <Content Include="build\asset-manifest.json" />
+        <Content Include="build\manifest.json" />
+        <Content Include="functions\.eslintrc.json" />
+        <Content Include="functions\package-lock.json" />
+        <Content Include="functions\package.json" />
+        <Content Include="functions\index.js" />
+        <Content Include="public\robots.txt" />
+        <Content Include="public\index.html" />
+        <Content Include="public\logo192.png" />
+        <Content Include="public\logo512.png" />
+        <Content Include="public\favicon.ico" />
+        <Content Include="public\manifest.json" />
+        <Content Include="src\App.css" />
+        <Content Include="src\Chat.css" />
+        <Content Include="src\ChatHeader.css" />
+        <Content Include="src\index.css" />
+        <Content Include="src\Login.css" />
+        <Content Include="src\Message.css" />
+        <Content Include="src\Sidebar.css" />
+        <Content Include="src\SidebarChannel.css" />
+        <Content Include="src\App.js" />
+        <Content Include="src\Chat.js" />
+        <Content Include="src\ChatHeader.js" />
+        <Content Include="src\firebase.js" />
+        <Content Include="src\index.js" />
+        <Content Include="src\Login.js" />
+        <Content Include="src\Message.js" />
+        <Content Include="src\reportWebVitals.js" />
+        <Content Include="src\Sidebar.js" />
+        <Content Include="src\SidebarChannel.js" />
+        <Content Include="build\static\css\main.de84d8e5.chunk.css" />
+        <Content Include="build\static\js\2.3f557950.chunk.js.LICENSE.txt" />
+        <Content Include="build\static\js\2.3f557950.chunk.js" />
+        <Content Include="build\static\js\main.95cfc41d.chunk.js" />
+        <Content Include="build\static\js\runtime-main.8f7e853d.js" />
+        <Content Include="src\app\store.js" />
+        <Content Include="src\features\appSlice.js" />
+        <Content Include="src\features\userSlice.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="bin" />
+        <Folder Include="build" />
+        <Folder Include="build\static" />
+        <Folder Include="build\static\css" />
+        <Folder Include="build\static\js" />
+        <Folder Include="functions" />
+        <Folder Include="obj" />
+        <Folder Include="obj\Debug" />
+        <Folder Include="obj\Release" />
+        <Folder Include="public" />
+        <Folder Include="src" />
+        <Folder Include="src\app" />
+        <Folder Include="src\features" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
 </Project>
