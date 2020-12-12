@@ -40,4 +40,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Server: 
 
-This project is currently deployed on **Firebase**: https://cs-4306-social-platform.web.app/ (currently undeployable due to ongoing front-end development, however the project can still be run using the 'npm start' command).
+This project is currently deployed on **Firebase**: https://cs-4306-social-platform.web.app/.
