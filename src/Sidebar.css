@@ -20,6 +20,15 @@
     flex: 1;
 }
 
+sidebar__channelsListIcons {
+    padding: 10px;
+    cursor: pointer;
+}
+
+    .sidebar__channelsListIcons:hover {
+    color: white;
+}
+
 .sidebar__addChannel {
     cursor: pointer;
 }
@@ -42,7 +51,6 @@
     align-items: center;
 }
 
-.sidebar__voice,
 .sidebar__profile {
     display: flex;
     justify-content: space-between;
@@ -51,27 +59,6 @@
     background-color: #2f3135;
     padding: 10px;
     border: 1px solid gray;
-}
-
-.sidebar__voiceInfo {
-    flex: 1;
-    padding: 10px;
-}
-
-.sidebar__voiceIcon {
-    color: #4fb185;
-}
-
-.sidebar__voiceInfo > h3 {
-    color: #4fb185;
-}
-
-.sidebar__voiceInfo > p {
-    font-size: smaller;
-}
-
-.sidebar__voiceIcons > .MuiSvgIcon-root {
-    padding: 10px;
 }
 
 .sidebar__profileInfo {
@@ -85,4 +72,8 @@
 
 .sidebar__profileIcons > .MuiSvgIcon-root {
     padding: 10px;
+    cursor: pointer;
+}
+    .sidebar__profileIcons:hover {
+    color: white;
 }

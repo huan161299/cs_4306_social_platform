@@ -3,12 +3,7 @@ import "./Sidebar.css";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import AddIcon from "@material-ui/icons/Add";
 import SidebarChannel from "./SidebarChannel";
-import SignalCellularAltIcon from "@material-ui/icons/SignalCellularAlt";
-import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
-import CallIcon from "@material-ui/icons/Call";
 import { Avatar } from "@material-ui/core";
-import MicIcon from "@material-ui/icons/Mic";
-import HeadsetIcon from "@material-ui/icons/Headset";
 import SettingsIcon from "@material-ui/icons/Settings";
 import { useSelector } from "react-redux";
 import { selectUser } from "./features/userSlice";
@@ -39,6 +34,18 @@ function Sidebar() {
         }
     };
 
+    const handleDeleteChannel = (id) => {
+        if (window.confirm("Do you want to delete this channel?")) {
+            db.collection("channels").doc(id).delete().catch((error) => alert(error.message));
+        } else { }
+    };
+
+    const handleLogOut = () => {
+        if (window.confirm("Do you want to logout?")) {
+            auth.signOut();
+        } else { }
+    };
+
     return (
         <div className="sidebar">
             <div className="sidebar__top">
@@ -58,42 +65,26 @@ function Sidebar() {
 
                 <div className="sidebar__channelsList">
                     {channels.map(({ id, channel }) => (
-                        <SidebarChannel
-                            key={id}
-                            id={id}
-                            channelName={channel.channelName}
-                        />
+                        <div>
+                            <SidebarChannel
+                                key={id}
+                                id={id}
+                                channelName={channel.channelName} 
+                                onDeleteChannel={handleDeleteChannel} />
+                        </div>
                     ))}
                 </div>
             </div>
 
-            <div className="sidebar__voice">
-                <SignalCellularAltIcon
-                    className="sidebar__voiceIcon"
-                    fontSize="large"
-                />
-                <div className="sidebar__voiceInfo">
-                    <h3>Voice Connected</h3>
-                    <p>Stream</p>
-                </div>
-
-                <div className="sidebar__voiceIcons">
-                    <InfoOutlinedIcon />
-                    <CallIcon />
-                </div>
-            </div>
-
             <div className="sidebar__profile">
-                <Avatar onClick={() => auth.signOut()} src={user.photo} />
+                <Avatar src={user.photo} />
                 <div className="sidebar__profileInfo">
                     <h3>{user.displayName}</h3>
-                    <p>#{user.uid.substring(0, 4)}</p>
+                    <p>#{user.uid.substring(0, 6)}</p>
                 </div>
 
                 <div className="sidebar__profileIcons">
-                    <MicIcon />
-                    <HeadsetIcon />
-                    <SettingsIcon />
+                    <SettingsIcon onClick={handleLogOut}/>
                 </div>
             </div>
         </div>

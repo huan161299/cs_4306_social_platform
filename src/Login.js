@@ -11,11 +11,12 @@ function Login() {
 
     return (
         <div className="login">
-            
+            <div className="loginButton">
             <Button onClick={signIn}>Sign In</Button>
+            </div>
 
             <footer>
-                    <p className="someFooter">For educational purpose only.</p>
+                <p className="someFooter">For educational purpose only.</p>
             </footer>
         </div>
     );

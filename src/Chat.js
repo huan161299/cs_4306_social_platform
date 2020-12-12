@@ -57,31 +57,33 @@ function Chat() {
                 ))}
             </div>
 
-            <div className="chat__input">
-                <AddCircleIcon fontSize="large" />
-                <form>
-                    <input
-                        value={input}
-                        disabled={!channelId}
-                        onChange={(e) => setInput(e.target.value)}
-                        placeholder={`Message #${channelName}`}
-                    />
-                    <button
-                        disabled={!channelId}
-                        className="chat__inputButton"
-                        type="submit"
-                        onClick={sendMessage}
-                    >
-                        Send Message
+            {channelName !== null && 
+                <div className="chat__input">
+                    <AddCircleIcon fontSize="large" />
+                    <form>
+                        <input
+                            value={input}
+                            disabled={!channelId}
+                            onChange={(e) => setInput(e.target.value)}
+                            placeholder={`Message #${channelName}`}
+                        />
+                        <button
+                            disabled={!channelId}
+                            className="chat__inputButton"
+                            type="submit"
+                            onClick={sendMessage}
+                        >
+                            Send Message
           </button>
-                </form>
+                    </form>
 
-                <div className="chat__inputIcons">
-                    <CardGiftcardIcon fontSize="large" />
-                    <GifIcon fontSize="large" />
-                    <EmojiEmotionsIcon fontSize="large" />
+                    <div className="chat__inputIcons">
+                        <CardGiftcardIcon fontSize="large" />
+                        <GifIcon fontSize="large" />
+                        <EmojiEmotionsIcon fontSize="large" />
+                    </div>
                 </div>
-            </div>
+            }
         </div>
     );
 }
