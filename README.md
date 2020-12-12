@@ -1,4 +1,4 @@
-# Social Platform - under development (by Huan Tran and Sevin Hawkins)
+# Social Platform - under development
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
