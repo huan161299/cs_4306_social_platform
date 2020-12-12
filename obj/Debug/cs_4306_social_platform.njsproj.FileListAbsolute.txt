@@ -1,0 +1,3 @@
+G:\code\CS_4306_social_platform\obj\Debug\cs_4306_social_platform.njsprojAssemblyReference.cache
+G:\code\CS_4306_social_platform\obj\Debug\cs_4306_social_platform.njsproj.CoreCompileInputs.cache
+G:\code\CS_4306_social_platform\bin\Microsoft.NodejsTools.WebRole.dll

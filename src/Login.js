@@ -13,6 +13,10 @@ function Login() {
         <div className="login">
             
             <Button onClick={signIn}>Sign In</Button>
+
+            <footer>
+                    <p className="someFooter">For educational purpose only.</p>
+            </footer>
         </div>
     );
 }

@@ -8,8 +8,8 @@ const firebaseConfig = {
     projectId: "cs-4306-social-platform",
     storageBucket: "cs-4306-social-platform.appspot.com",
     messagingSenderId: "523562692001",
-    appId: "1:523562692001:web:7715b4348355aaad01afe0",
-    measurementId: "G-1PGF6MYXWP"
+    appId: "1:523562692001:web:f53f33f5b32c0c0901afe0",
+    measurementId: "G-FFX85N2GTH"
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);

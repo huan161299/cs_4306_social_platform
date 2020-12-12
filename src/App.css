@@ -1,3 +1,7 @@
 .app {
     display: flex;
 }
+
+.someFooter {
+    color: white;
+}
