@@ -9,5 +9,7 @@ This project is currently deployed on **Firebase**: https://cs-4306-social-platf
 ## Made by:
 
 Huan Tran and Sevin Hawkins.
+
 CS 4306 - Professor Erdoğan Doğdu.
+
 Angelo State University.
