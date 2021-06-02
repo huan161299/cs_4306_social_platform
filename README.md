@@ -10,6 +10,6 @@ Check the wiki [here](https://github.com/huan161299/cs_4306_social_platform/wiki
 
 Huan Tran.
 
-Class project CS 4306 - guided by Professor Erdoğan Doğdu.
+Class project CS 4306 Software Engineering - guided by Professor Erdoğan Doğdu.
 
 Angelo State University, TX.
